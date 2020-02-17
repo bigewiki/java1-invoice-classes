@@ -6,8 +6,6 @@
 /*Practice with Java!                                       */
 /************************************************************/
 
-package app;
-
 public class Invoice {
     // initialize attributes
     private String partNumber;

@@ -1,3 +1,4 @@
+
 /************************************************************/
 /*Program:  Recursion Assignment                            */
 /*CIS163AA                                                  */
@@ -6,12 +7,10 @@
 /*Practice with Java!                                       */
 /************************************************************/
 
-package app;
-
 import java.util.Scanner;
 
 public class InvoiceTest {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // introduce the program
         System.out.println();
         System.out.print("Hello! The purpose of this program is to use an  ");
