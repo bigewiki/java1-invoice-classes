@@ -14,13 +14,15 @@ public class App {
         Invoice invoice = new Invoice("test", "testing here", 1, 1.99);
         invoice.setPartNumber("ABC123");
         invoice.setPartQty(5);
-        System.out.println("Invoice amount is $" + invoice.getInvoiceAmount());
-        // invoice.test();
+        test(invoice);
     }
 
-    // testing
-    public void test() {
-        System.out.println(partNumber + "\n" + partDesc + "\n" + partQty + "\n" + partPrice);
+    public static void test(Invoice invoice) {
+        System.out.println("Part number: " + invoice.getPartNumber());
+        System.out.println("Description: " + invoice.getPartDesc());
+        System.out.println("Quantity: " + invoice.getPartQty());
+        System.out.println("Price: " + invoice.getPartPrice());
+        System.out.println("Total: $" + invoice.getInvoiceAmount());
     }
 
 }

@@ -42,7 +42,8 @@ public class Invoice {
     }
 
     // get and set part quantity
-    public void getPartQty() {
+    public Integer getPartQty() {
+        return partQty;
     }
 
     public void setPartQty(Integer param) {
@@ -50,7 +51,7 @@ public class Invoice {
     }
 
     // get and set part price
-    public String getPartPrice() {
+    public Double getPartPrice() {
         return partPrice;
     }
 
