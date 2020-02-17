@@ -29,7 +29,6 @@ public class App {
         Integer partQty = input.nextInt();
         System.out.print("Type a price for your part: ");
         Double partPrice = input.nextDouble();
-        input.close();
 
         // create a new instance
         Invoice invoice = new Invoice(partNumber, partDesc, partQty, partPrice);
@@ -38,7 +37,25 @@ public class App {
         System.out.println();
         output(invoice);
 
-        // todo demonstrate setters
+        // making the user do it again for the sake of demonstration
+        System.out.println();
+        System.out.print("For demonstration purposes, we're going to do all this again.\n");
+
+        // demonstrate setters
+        System.out.print("Type a model number for your part: ");
+        invoice.setPartNumber(input.nextLine());
+        System.out.print("Type a description for this part: ");
+        invoice.setPartDesc(input.nextLine());
+        System.out.print("Type how many of this part are in stock: ");
+        invoice.setPartQty(input.nextInt());
+        System.out.print("Type a price for your part: ");
+        invoice.setPartPrice(input.nextDouble());
+
+        input.close();
+
+        // output for the user AGAIN
+        System.out.println();
+        output(invoice);
     }
 
     public static void output(Invoice invoice) {
